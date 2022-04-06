@@ -1,6 +1,6 @@
 FROM php:8.1-fpm-alpine
 
-RUN composer global require hirak/prestissimo
+RUN composer global require laravel/installer
 
 RUN mkdir /home/app/app
 WORKDIR /home/app/app
