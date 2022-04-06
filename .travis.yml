@@ -1,9 +1,13 @@
 os:
   - linux
 language: php
-dist: trusty
+dist: bionic
 php:
   - '8.1'
+
+install: skip
+script: skip
+
 services:
   - docker
 jobs:
