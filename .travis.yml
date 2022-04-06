@@ -1,7 +1,7 @@
 os:
   - linux
 language: php
-dist: bionic
+dist: trusty
 php:
   - '8.1.0'
 
@@ -20,6 +20,7 @@ jobs:
       - cp .env.example .env
       - php artisan key:generate
       - vendor/bin/phpunit tests/Feature/ExampleTest.php
+
     - stage: "Build Docker Image"
       name: "Build and Push Images Docker" 
       script:
